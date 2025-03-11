@@ -1,0 +1,96 @@
+<html>
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">  
+    <head>
+    <meta charset="UTF-8">
+    <title>Recruitment Survey</title>
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+        body {
+            background-color: black;
+            color: blue;
+            font-family: 'Roboto Mono', monospace;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 36px;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px blue, 0 0 20px cyan, 0 0 30px blue;
+            animation: neon-glow 1.5s infinite alternate;
+        }
+
+        p, label, input, button {
+            font-size: 18px;
+            text-shadow: 0 0 8px blue, 0 0 12px cyan, 0 0 16px blue;
+            animation: neon-glow 1.5s infinite alternate;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            border: 4px solid blue;
+            box-shadow: 0 0 15px blue, 0 0 25px cyan;
+            border-radius: 10px;
+        }
+
+        input {
+            background-color: black;
+            border: 1px solid blue;
+            color: cyan;
+            padding: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: black;
+            border: 2px solid blue;
+            color: cyan;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            text-shadow: 0 0 8px blue;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: blue;
+            color: black;
+        }
+
+        @keyframes neon-glow {
+            0% {
+                text-shadow: 0 0 10px blue, 0 0 20px cyan, 0 0 30px blue;
+            }
+            100% {
+                text-shadow: 0 0 15px cyan, 0 0 30px blue, 0 0 40px cyan;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Recruitment Survey</h2>
+    <img src="Veil.png" width="500" height="500" alt="Cyberpunk Image" />
+    
+    <form action="nextPage.html" method="POST">
+        <label>Handle/Alias: <input type="text" name="alias"></label><br><br>
+        <label>How did you first hear about peace.net? <input type="text" name="peaceNet"></label><br><br>
+        <label>What do you seek from a new future? <input type="text" name="future"></label><br><br>
+        <label>Do you believe the world, as it is, can be saved? <input type="text" name="worldSaved"></label><br><br>
+        <label>What is the first system you ever hacked—whether digital or otherwise? <input type="text" name="firstHack"></label><br><br>
+        <label>Have you ever changed your identity? Have you ever wanted to? <input type="text" name="identity"></label><br><br>
+        <label>If given the chance to replace a failing part of your body with something stronger, would you? <input type="text" name="cybernetics"></label><br><br>
+        <label>Have you ever willingly altered your own consciousness? <input type="text" name="alteredMind"></label><br><br>
+        <label>How much of yourself would you give to become something greater? <input type="text" name="sacrifice"></label><br><br>
+        <label>Do you ever feel like something is watching, just beyond the static? <input type="text" name="static"></label><br><br>
+        <label>Have you received messages you weren’t meant to see? <input type="text" name="messages"></label><br><br>
+        <label>If your thoughts were not your own, how would you know? <input type="text" name="thoughts"></label><br><br>
+        <label>If you could hear a voice from beyond the Blackwall, would you listen? <input type="text" name="blackwall"></label><br><br>
+        <label>If the world had to burn for something better to rise, would you light the match? <input type="text" name="burnWorld"></label><br><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
