@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+span{
+body {
+    background-color: black;
+    color: #00aaff;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 2px;
+    line-height: 1.6;
+    text-shadow: 0 0 5px #0088cc;
+}
+
+.container {
+    border: 2px solid #00aaff;
+    padding: 20px;
+    max-width: 800px;
+    margin: 50px auto;
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 15px #00aaff;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+    border-bottom: 2px solid #00aaff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.scanline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #00aaff;
+    box-shadow: 0 0 10px #00aaff;
+    animation: scan 3s infinite linear;
+}
+
+@keyframes scan {
+    0% { top: 0; }
+    100% { top: 100%; }
+}
+
+.flicker {
+    animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.8; }
+    100% { opacity: 1; }
+}
+
+.log-entry {
+    font-size: 14px;
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-left: 3px solid #00aaff;
+    box-shadow: 0 0 10px #0088cc;
+}
+
+.timestamp {
+    font-size: 12px;
+    color: #0077cc;
+    display: block;
+    margin-bottom: 5px;
+}
+}
