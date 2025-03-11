@@ -1,0 +1,45 @@
+span{
+body {
+    background-color: black;
+    color: #ff0033; /* Neon red */
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    text-shadow: 0 0 5px #ff0033, 0 0 10px #ff3366, 0 0 20px #ff6699;
+    animation: glitch 1.5s infinite alternate;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 0 0 8px #ff0033, 0 0 16px #ff3366;
+    animation: flicker 2s infinite alternate;
+}
+
+a {
+    color: #ff3366;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #ff6699;
+    text-shadow: 0 0 5px #ff6699, 0 0 10px #ff99cc;
+}
+
+/* Cyberpunk Glitch Effect */
+@keyframes glitch {
+    0% { text-shadow: 0 0 5px #ff0033, 0 0 10px #ff3366; }
+    50% { text-shadow: -2px 2px 5px #ff6699, 2px -2px 10px #ff99cc; }
+    100% { text-shadow: 2px -2px 5px #ff0033, -2px 2px 10px #ff3366; }
+}
+
+/* Flickering Effect */
+@keyframes flicker {
+    0% { opacity: 0.8; }
+    50% { opacity: 1; text-shadow: 0 0 12px #ff0033, 0 0 24px #ff3366; }
+    100% { opacity: 0.9; }
+}
+}
