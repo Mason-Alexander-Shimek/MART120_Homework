@@ -1,0 +1,9 @@
+For my final project, I plan to create a more advanced and refined version of the game that I designed in Scratch during the last Week 3 of this course, which was titled Dodge. The improved version will be developed with p5.js so that there will be greater control, improved graphics quality, and a more sophisticated design.
+
+
+
+The overall objective will remain the same: the player must dodge oncoming obstacles for as long as possible. Nevertheless, this latest update will have a number of important improvements based on past criticism. Unlike the initial Scratch version, where the difficulty became too high, I will implement a gradual system of difficulty based on timed intervals (setInterval()) or frame numbers to gradually increase the spawn rate, speed, and complexity of obstacles. I also plan on adding different types of obstacles with various behaviors (e.g., various movement speeds, patterns, or homing mechanics) in order to provide an interesting and dynamic gameplay in the long term.
+
+
+
+Regarding the new coding concepts that I will be applying, I plan on writing classes (e.g., a Player class and an Obstacle class) to keep the properties and behaviors of game objects organized and clean. I will store multiple obstacles in arrays and redraw/update each frame with a for loop. I also want to implement more precise collision detection (hopefully) and manage game states (e.g., "start screen," "gameplay," "game over") with variables and conditional blocks to transition smoothly between stages. Additionally, I will make use of timing functions (millis() and setTimeout()) to control spawning of obstacles and dynamic difficulty adjustment. I will add sound and audio files, and polish up the experience with thoughtful UI elements such as a scoring system (survival time-based), high score logging (perhaps using localStorage to keep scores over sessions), and simple menu controls (Start and Retry button/key).
